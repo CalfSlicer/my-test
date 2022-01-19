@@ -1,6 +1,8 @@
 body {
     padding: 5px;
-    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    /* font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .inputContainer {

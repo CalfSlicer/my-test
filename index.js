@@ -16,7 +16,7 @@ class CustomWorkout {
         if (domListElement)
             domListElement.innerHTML += `
         <li class="exerciseListItem">
-            
+                Add Exercise
                 <ul class="formContainer">
                     <li>
                         <input type="text" id="newExerciseInput" class="w100" placeholder=""></input>
@@ -25,23 +25,22 @@ class CustomWorkout {
                         <label for="durationInput">Duration</label>
                         <input type="number" inputmode="numeric" pattern="[0-9]*" id="durationInput" class="durationInput" value="30"></input>
                         <select name="durationMinutesOrSeconds" id="durationMinutesOrSecondsSelect">
-                            <option value="seconds">seconds</option>
-                            <option value="minutes">minutes</option>
+                            <option value="seconds">sec</option>
+                            <option value="minutes">min</option>
                         </select>
                     </li>
                     <li>
                         <label for="restDurationInput">Rest</label>
                         <input type="number" inputmode="numeric" pattern="[0-9]*" id="restDurationInput" class="durationInput" value="30"></input>
                         <select name="restDurationMinutesOrSeconds" id="restDurationMinutesOrSeconds">
-                            <option value="seconds">seconds</option>
-                            <option value="minutes">minutes</option>
+                            <option value="seconds">sec</option>
+                            <option value="minutes">min</option>
                         </select>
                     </li>
                     <li>
                         <button type="submit" id="btnAddExercise">Add</button>
                     </li>
-                </ul>
-            
+                </ul>            
         </li>
         `;
 
