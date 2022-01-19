@@ -23,7 +23,7 @@ class CustomWorkout {
                     </li>
                     <li>
                         <label for="durationInput">Duration</label>
-                        <input type="number" id="durationInput" class="durationInput" value="30"></input>
+                        <input type="number" inputmode="numeric" pattern="[0-9]*" id="durationInput" class="durationInput" value="30"></input>
                         <select name="durationMinutesOrSeconds" id="durationMinutesOrSecondsSelect">
                             <option value="seconds">seconds</option>
                             <option value="minutes">minutes</option>
@@ -31,7 +31,7 @@ class CustomWorkout {
                     </li>
                     <li>
                         <label for="restDurationInput">Rest</label>
-                        <input type="number" id="restDurationInput" class="durationInput" value="30"></input>
+                        <input type="number" inputmode="numeric" pattern="[0-9]*" id="restDurationInput" class="durationInput" value="30"></input>
                         <select name="restDurationMinutesOrSeconds" id="restDurationMinutesOrSeconds">
                             <option value="seconds">seconds</option>
                             <option value="minutes">minutes</option>
