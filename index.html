@@ -5,16 +5,100 @@
         <title></title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <meta property="og:title" content="" />
-        <meta property="og:type" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="" />
-
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        Blah
+        <h1>Custom Workout</h1>
+
+        <div class="inputContainer text-center">
+            <h2>Rounds</h2>
+            <input type="number" id="roundsInput" class="em15 text-center" value="4"></input>
+        </div>
+
+        <div class="inputContainer">
+            <h2>Exercises</h2>
+
+            <!-- <ol id="exerciseList" class="exerciseList em15"> -->
+                <!-- <li class="exerciseListItem">Dumbbell Clean & Press</li>
+                <li class="exerciseListItem">Dumbbell Deadlift (30s)<ul><li>Rest (30s)</li></ul></li>
+                <li class="exerciseListItem">Renegade Rows</li>
+                <li class="exerciseListItem">Overhead Squats</li>
+                <li class="exerciseListItem">Lunging Bicep Press</li>
+                <li class="exerciseListItem">Arnold Press</li>
+                <li class="exerciseListItem">Goblet Squats</li>
+                <li class="exerciseListItem">
+                    <input type="text" id="newExerciseInput"></input>
+                    <input type="text" id="durationInput" value="30"></input>
+                    <select name="durationMinutesOrSeconds" id="durationMinutesOrSecondsSelect">
+                        <option value="seconds">seconds</option>
+                        <option value="minutes">minutes</option>
+                    </select>
+                    <button id="btnAddExercise">Add</button>
+                </li> -->
+            <!-- </ol> -->
+
+            <ol id="exerciseList" class="exerciseList em15">
+                <li class="exerciseListItem">Dumbbell Clean & Press</li>
+                <li class="exerciseListItem">Dumbbell Deadlift (30s)<ul><li>Rest (30s)</li></ul></li>
+                <li class="exerciseListItem">Renegade Rows</li>
+                <li class="exerciseListItem">Overhead Squats</li>
+                <li class="exerciseListItem">Lunging Bicep Press</li>
+                <li class="exerciseListItem">Arnold Press</li>
+                <li class="exerciseListItem">Goblet Squats</li>
+
+                <!-- <li class="exerciseListItem">
+                    <div>                    
+                    <input type="text" id="newExerciseInput" placeholder="Exercise Name"></input>
+                    <input type="text" id="durationInput" class="durationInput" value="30"></input>
+                    <select name="durationMinutesOrSeconds" id="durationMinutesOrSecondsSelect">
+                        <option value="seconds">seconds</option>
+                        <option value="minutes">minutes</option>
+                    </select>
+                </div>
+                <div>
+                    Rest
+                    <input type="text" id="restDurationInput" class="durationInput" value="30"></input>
+                    <select name="restDurationMinutesOrSeconds" id="restDurationMinutesOrSecondsSelect">
+                        <option value="seconds">seconds</option>
+                        <option value="minutes">minutes</option>
+                    </select>
+                    <button id="btnAddExercise">Add</button>
+                </div>
+                </li> -->
+
+                <li class="exerciseListItem">
+                    <form>
+                        <ul class="formContainer">
+                            <li>
+                                <input type="text" id="newExerciseInput" class="w100" placeholder=""></input>
+                            </li>
+                            <li>
+                                <label for="durationInput">Duration</label>
+                                <input type="number" id="durationInput" class="durationInput" value="30"></input>
+                                <select name="durationMinutesOrSeconds" id="durationMinutesOrSecondsSelect">
+                                    <option value="seconds">seconds</option>
+                                    <option value="minutes">minutes</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="restDurationInput">Rest</label>
+                                <input type="number" id="restDurationInput" class="durationInput" value="30"></input>
+                                <select name="restDurationMinutesOrSeconds" id="restDurationMinutesOrSeconds">
+                                    <option value="seconds">seconds</option>
+                                    <option value="minutes">minutes</option>
+                                </select>
+                            </li>
+                            <li>
+                                <button type="submit" id="btnAddExercise">Add</button>
+                            </li>
+                        </ul>
+                    </form>
+                </li>
+
+
+            </ol>
+        </div>
+
         <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
