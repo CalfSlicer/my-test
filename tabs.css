@@ -1,0 +1,28 @@
+/* .tabs-topLevelContainer {
+
+} */
+
+.tabs-tabHeaderRow {
+    display: flex;
+}
+
+.tabs-tabHeader {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tabs-tabHeader-highlighted {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.tabs-contentContainer {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
